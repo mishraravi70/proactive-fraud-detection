@@ -37,7 +37,7 @@ Size: ~6 million rows, 11 features
 
 - These are valid fraud indicators, not errors → kept in the dataset.
 
-##3.Multicollinearity
+## 3.Multicollinearity
 
 - Strong correlation between:
 
@@ -59,5 +59,32 @@ Dropped redundant balance columns to reduce leakage.\
 
 - Dropped low-signal features: step, isFlaggedFraud
 
-- Encoded categorical feature type into numeric codes
+- Encoded categorical feature type into numeric codes\
+
+# 🤖 Model: LightGBM
+## Why LightGBM?
+
+- Handles large-scale data efficiently
+
+- Robust to class imbalance (using scale_pos_weight)
+
+- Captures non-linear interactions
+
+- Provides feature importance & SHAP explainability
+
+## Training Setup
+
+- Split: 80/20 (Stratified for fraud ratio)
+
+- Objective: Binary classification (isFraud)
+
+Metrics:
+
+- ROC-AUC (ranking ability)
+
+- Precision, Recall, F1-score (business interpretability)
+
+-Confusion Matrix
+
+- Precision-Recall Curve
 
