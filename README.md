@@ -10,7 +10,7 @@ Source: [Kaggle Dataset – Fraud.csv]
 
 Size: ~6 million rows, 11 features
 
-## Key Features:
+# Key Features:
 
 - step → transaction day/time
 
@@ -24,20 +24,20 @@ Size: ~6 million rows, 11 features
 
 + isFlaggedFraud → pre-existing rule-based flag (excluded to prevent leakage)
 
-## Data Preprocessing
-1. # Missing Values
+# Data Preprocessing
+## 1. Missing Values
 
 - Checked with .isnull().sum()
 
 ✅ No missing values found
 
-2. # Outliers:
+## 2.Outliers:
 
 - Large transaction amounts were observed.
 
 - These are valid fraud indicators, not errors → kept in the dataset.
 
-3. Multicollinearity
+##3.Multicollinearity
 
 - Strong correlation between:
 
@@ -53,11 +53,11 @@ Engineered new features:
 #dest_diff = oldbalanceDest - newbalanceDest + amount\
 Dropped redundant balance columns to reduce leakage.\
 
-4. Feature Engineering
+## 4.Feature Engineering
 
-  Dropped identifiers: nameOrig, nameDest
+- Dropped identifiers: nameOrig, nameDest
 
-  Dropped low-signal features: step, isFlaggedFraud
+- Dropped low-signal features: step, isFlaggedFraud
 
- Encoded categorical feature type into numeric codes
+- Encoded categorical feature type into numeric codes
 
