@@ -39,11 +39,11 @@ Checked with .isnull().sum()
 
 3. Multicollinearity
 
--Strong correlation between:
+   -Strong correlation between:
 
--oldbalanceOrg ↔ newbalanceOrg
+   -oldbalanceOrg ↔ newbalanceOrg
 
--oldbalanceDest ↔ newbalanceDest
+   -oldbalanceDest ↔ newbalanceDest
 
 Action Taken:
 
