@@ -51,5 +51,13 @@ Engineered new features:
 
 #orig_diff = oldbalanceOrg - newbalanceOrg - amount\
 #dest_diff = oldbalanceDest - newbalanceDest + amount\
-Dropped redundant balance columns to reduce leakage.
+Dropped redundant balance columns to reduce leakage.\
+
+4. Feature Engineering
+
+  Dropped identifiers: nameOrig, nameDest
+
+  Dropped low-signal features: step, isFlaggedFraud
+
+ Encoded categorical feature type into numeric codes
 
