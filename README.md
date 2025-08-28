@@ -10,19 +10,19 @@ Source: [Kaggle Dataset – Fraud.csv]
 
 Size: ~6 million rows, 11 features
 
-Key Features:
+## Key Features:
 
-step → transaction day/time
+-step → transaction day/time
 
-type → transaction type (TRANSFER, CASH_OUT, etc.)
+*type → transaction type (TRANSFER, CASH_OUT, etc.)
 
-amount → transaction value
++amount → transaction value
 
-oldbalanceOrg, newbalanceOrg, oldbalanceDest, newbalanceDest → account balances before/after transactions
++oldbalanceOrg, newbalanceOrg, oldbalanceDest, newbalanceDest → account balances before/after transactions
 
-isFraud → target variable (1 = Fraud, 0 = Legit)
++isFraud → target variable (1 = Fraud, 0 = Legit)
 
-isFlaggedFraud → pre-existing rule-based flag (excluded to prevent leakage)
++isFlaggedFraud → pre-existing rule-based flag (excluded to prevent leakage)
 
 🔧 Data Preprocessing
 1. Missing Values
