@@ -102,11 +102,11 @@ Metrics:
 
 1. Transaction Type (TRANSFER, CASH_OUT dominate fraud cases)
 
-2.Balance Consistency (orig_diff, dest_diff)
+2. Balance Consistency (orig_diff, dest_diff)
 
-3.Transaction Amount (extreme/high amounts often fraud)
+3. Transaction Amount (extreme/high amounts often fraud)
 
-4.New Destinations (fresh accounts often suspicious)\
+4. New Destinations (fresh accounts often suspicious)\
 
 # Explainability
 
@@ -132,4 +132,24 @@ Metrics:
 
 - Real-time features & velocity checks
 
-- Continuous retraining with feedback loops
+- Continuous retraining with feedback loops\
+
+# 📊 Evaluation & Monitoring
+
+## Business KPIs:
+
+- ↓ Fraud losses
+
+- ↑ Recall (capture more fraud)
+
+- ↑ Precision (reduce false alarms)
+
+-  Maintain good customer experience
+
+## Deployment Monitoring:
+
+- Drift detection (PSI/KS tests)
+
+- Cost-based threshold tuning
+
+- Explainability dashboards for compliance
