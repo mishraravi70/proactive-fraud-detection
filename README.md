@@ -31,19 +31,19 @@ Checked with .isnull().sum()
 
 ✅ No missing values found
 
-2. Outliers
+2. Outliers:
 
-Large transaction amounts were observed.
+-Large transaction amounts were observed.
 
-These are valid fraud indicators, not errors → kept in the dataset.
+-These are valid fraud indicators, not errors → kept in the dataset.
 
 3. Multicollinearity
 
-Strong correlation between:
+-Strong correlation between:
 
-oldbalanceOrg ↔ newbalanceOrg
+-oldbalanceOrg ↔ newbalanceOrg
 
-oldbalanceDest ↔ newbalanceDest
+-oldbalanceDest ↔ newbalanceDest
 
 Action Taken:
 
