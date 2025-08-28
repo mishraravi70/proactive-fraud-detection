@@ -84,7 +84,52 @@ Metrics:
 
 - Precision, Recall, F1-score (business interpretability)
 
--Confusion Matrix
+- Confusion Matrix
 
-- Precision-Recall Curve
+- Precision-Recall Curve\
 
+ #  📈 Results
+
+- ROC-AUC: ~0.99 (excellent separability)
+
+- Fraud Recall: ~71% (captures majority of fraud cases)
+
+- Fraud Precision: ~47% (around half of flagged cases are actual fraud)
+
+- False Positives reduced drastically (~1,290 vs ~27,000 initial)\
+
+# Key Predictive Features
+
+1. Transaction Type (TRANSFER, CASH_OUT dominate fraud cases)
+
+2.Balance Consistency (orig_diff, dest_diff)
+
+3.Transaction Amount (extreme/high amounts often fraud)
+
+4.New Destinations (fresh accounts often suspicious)\
+
+# Explainability
+
+- Feature importance plots
+
+- SHAP summary & force plots\
+
+# 🛡️ Fraud Prevention Recommendations
+
+## 1.Transaction Controls
+
+ - Risk-based authentication (OTP, biometric for high-risk transfers)
+
+ - Dynamic limits & cooling-off for new payees
+
+ - Recipient reputation scoring
+
+## 2.Behavioral profiling
+
+- Model & Infrastructure
+
+- Two-stage scoring (fast pre-screen + LightGBM for risky cases)
+
+- Real-time features & velocity checks
+
+- Continuous retraining with feedback loops
