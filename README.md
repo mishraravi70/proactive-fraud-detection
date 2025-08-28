@@ -48,3 +48,8 @@ oldbalanceDest ↔ newbalanceDest
 Action Taken:
 
 Engineered new features:
+
+orig_diff = oldbalanceOrg - newbalanceOrg - amount
+dest_diff = oldbalanceDest - newbalanceDest + amount
+Dropped redundant balance columns to reduce leakage.
+
